@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Feliz San Valentín, Mi Amor</title>
+</head>
+<body>
+    <!-- Animación de corazones cayendo -->
+    <div class="falling-hearts"></div>
+
+    <!-- Reproductor de música -->
+    <audio id="valentines-music" loop>
+        <source src="assets/music/background_music.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Sobre inicial -->
+    <div class="valentines-day">
+        <div class="envelope"></div>
+        <div class="heart"></div>
+        <div class="text">¡HAZ CLICK AQUÍ<br>MI AMOR!</div>
+        <div class="front"></div>
+    </div>
+
+    <!-- La tarjeta que se abre -->
+    <div id="card">
+        <!-- Lado izquierdo con la foto -->
+        <div class="side one">
+            <img src="assets/img/couple.jpg" alt="Nuestra Foto">
+        </div>
+        <!-- Lado derecho con el texto paginado -->
+        <div class="side two">
+            <div class="book-content">
+                <!-- Página 1 -->
+                <div class="page" id="page1">
+                    <h2>✨ Para la chica que ilumina mis días ✨</h2>
+                    <p>Mi Alba,</p>
+                    <p>Quería hacer algo especial para ti, y la verdad, no sabía ni por dónde empezar. ¿Cómo pones en palabras lo increíble que es tenerte a mi lado?</p>
+                </div>
+                <!-- Página 2 -->
+                <div class="page" id="page2" style="display: none;">
+                    <p>Contigo, cada día se siente como una aventura. Me encanta todo de nosotros: nuestras risas tontas, las conversaciones hasta tarde y hasta los silencios cómodos.</p>
+                    <p>Haces que todo sea mejor, más divertido, más real.</p>
+                </div>
+                <!-- Página 3 -->
+                <div class="page" id="page3" style="display: none;">
+                    <p>Gracias por ser tú, por tu luz y ese corazón gigante que tienes. Eres mi persona favorita en el mundo entero.</p>
+                    <p>No sabes cuan feliz me hace tener a la niña más bonita a mi lado.</p>
+                </div>
+                <!-- Página 4: La Pregunta Final -->
+                <div class="page" id="page4" style="display: none;">
+                    <h2>La gran pregunta...</h2>
+                    <p>¿Te gustaría ser mi San Valentin?</p>
+                    <div class="valentine-question">
+                        <button id="yes-btn">Sí</button>
+                        <button id="no-btn">No</button>
+                    </div>
+                    <p style="font-size: 1.2em; margin-top: 20px;">❤️¡Te quiero demasiado, mi amor!<br>Con todo mi cariño, Brandon❤️</p>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <div class="navigation">
+                <button id="prev-page"><i class="fas fa-arrow-left"></i></button>
+                <button id="next-page"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla Final de Aceptación -->
+    <div id="final-message">
+        <div class="final-heart-container">
+            <i class="fas fa-heart"></i>
+        </div>
+        <h1>¡Sabía que dirías que sí! Te quiero</h1>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
